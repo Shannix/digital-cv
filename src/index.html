@@ -19,51 +19,99 @@
 </head>
 
 <body class="bg-light">
-  <div class="container-fluid">
 
-    <h1 class="text-center"> CV V0.1  </h1>
-
-    <div class="row">
-
-
-
-
-    </div>
-
-
-    <div class="row">
-
-      <div class="col-sm-3">
-
-        <p><i class="fas fa-map-marker"></i> 28 Rue des rancy <br> 69003, Lyon <br>
-          <i class="fas fa-at"></i> derradji2993@gmail.com <br>
-          <i class="fas fa-mobile"></i> 07 69 17 11 50</p>
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <picture>
+          <source srcset="img/profile.jpg" type="image/svg+xml">
+          <img src="img/profile.jpg" class="img-fluid img-thumbnail" alt="...">
+        </picture>
+        <h3 class="text-center"> Amine DERRADJI </h3>
+        <strong>AD</strong>
       </div>
 
-      <div class="col-sm-6">
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#"> <i class="fas fa-tachometer-alt"></i> Home </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <div id="content" class="container-fluid">
+
+      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-left"> <i class="fas fa-align-justify"></i> </button>
+
+      <!-- Contact  -->
 
 
+      <div class="line"></div>
+
+      <div class="row">
+        <div class="col-sm-4">
+
+          <p><i class="fas fa-map-marker"></i> 28 Rue des rancy <br> 69003, Lyon <br>
+            <i class="fas fa-at"></i> derradji2993@gmail.com <br>
+            <i class="fas fa-mobile"></i> 07 69 17 11 50</p>
+
+        </div>
+
+        <div class="col-sm-8">
+
+        </div>
       </div>
 
+      <div class="line"></div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="text-uppercase"> Parcours Professionnel </h4>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="row">
+        <div class="col-sm-12">
+
+
+        </div>
+      </div>
+
+      <footer>
+        Copyright (c) 2018 Shannix All Rights Reserved. (v0.1)
+      </footer>
     </div>
-
-
 
   </div>
 
-  <footer>
-    Copyright (c) 2018 Shannix All Rights Reserved.
-  </footer>
+
+
+
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebar').toggleClass('active');
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+      });
+    });
   </script>
+
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
